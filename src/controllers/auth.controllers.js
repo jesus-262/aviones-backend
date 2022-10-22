@@ -37,9 +37,9 @@ export const postiniciarsession = async(req, res)=>{
     //console.log(query);
     const usuario = await pool.query(query);
     if(usuario==""){
-        console.log("cedula no encontrada");
-       // return res.status(401).json({messaje:"cedula no encontrada"})
-       return res.json({messaje:"cedula no encontrada"});
+        console.log("Usuario no encontrado");
+     
+       return res.json({messaje:"Usuario no encontrado"});
     }
     
    
